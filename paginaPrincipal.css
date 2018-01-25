@@ -1,0 +1,185 @@
+
+html, body {
+	margin:0;
+	min-height: 100%;
+}
+
+table, tr, td {
+    border:1px solid black
+}
+
+body {
+	position: relative;
+	background-color:#BBAFF;
+	font-size:16px;
+	line-height:17px;
+	font-weight: normal;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.cabecera_nueva {
+	width: 100%;
+	overflow: hidden;
+	background-color:#B5BAFF;
+	/*clear:both;*/
+}
+.cabecera_nueva a {
+	text-decoration:none;
+}
+.cabecera_nueva .titulo_principal {
+	/*width: 20%;*/
+	padding-left: 1%;
+	padding-right: 1%;
+	float: left;
+	
+	/*clear:both;*/
+}
+
+.contenedorPlano {
+	/*clear:both;*/
+}
+.barraLateral {
+	clear: both;
+}
+
+.titulo_principal h1 {
+	line-height:2em;
+	margin-top: auto;
+}
+
+.cabecera {
+	width:100%;
+	background-color: #2639E6;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.cabecera a {
+	text-decoration: none;
+}
+
+#contenedorPlano {
+	background-color: white;
+	padding-top: 20px;
+	/*margin-left: 15%; */
+	width:83%;
+	/*width: 100%;*/
+	/*height: 100%;*/
+	position:relative;
+	float: left;
+	/*background: url("../img/plano2.jpg");*/
+	background-size: 100%;
+    background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.barraLateral {
+	
+	width: 15%;
+	height: 100%;
+	float: left;
+	padding: 1%;
+	padding-left: 1%;
+	/*padding-right:10px;*/
+	background-color: #7F88FF;
+	color: white;
+	/*overflow: hidden;*/
+}
+
+#titulo {
+	color: white;
+	width:100%; 
+	text-align:center;
+}
+
+#subtitulo {
+	width: 100%;
+	color: white;
+	text-align:left;
+	margin-top: -15px;
+}
+
+
+.cuadroTexto {
+	border-style: solid;
+	border-color: #804BF4;
+	border-radius: 5px;
+	background-color: white;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index:10;
+}
+
+.imagen {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+a {
+	margin-left: 5px;
+	color: blue;
+}
+
+.cuadroTexto {
+	float:left; 
+	visibility:hidden; 
+	max-width:200px;
+}
+
+.tituloComentario{
+	margin-left: 5%; 
+	margin-right: 5%;
+	font-weight: bold;
+}
+
+.textoComentario {
+	max-width:200px; 
+	margin-left: 5%; 
+	margin-right: 5%;
+	margin-top:25px;
+	position:relative; 
+	top:0; 
+	left: 0; 
+	z-index:10; 
+	background-color:white; 
+}
+
+.contenedor {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left:0;
+	overflow: hidden;
+}
+
+.imagenfondo {
+	position: relative;
+	top: 0;
+	left: 0%;
+	width: 100%;
+	z-index: -1;
+}
+
+.estancia{
+	/*border: 1px solid red;*/
+	z-index: 2;
+	/*cursor: pointer;*/
+}
+
+.estancia:hover{
+	/*border: 1px solid red;*/
+	z-index: 2;
+	background-color: rgba(125, 125, 125, 0.2);
+}
+
+.cabecera img{
+	width: 85px;
+}
+
+.cabecera td {
+	padding-left: 10px;
+}
+
