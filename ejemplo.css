@@ -1,0 +1,196 @@
+
+html, body {
+	margin:0;
+	min-height: 100%;
+}
+
+table, tr, td {
+    border:1px solid black
+}
+
+body {
+	position: relative;
+	background-color:#BBAFF;
+	font-size:16px;
+	line-height:17px;
+	font-weight: normal;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.cabecera_nueva {
+	width: 100%;
+	overflow: hidden;
+	background-color:#B5BAFF;
+	/*clear:both;*/
+}
+.cabecera_nueva a {
+	text-decoration:none;
+}
+.cabecera_nueva .titulo_principal {
+	/*width: 20%;*/
+	padding-left: 1%;
+	padding-right: 1%;
+	float: left;
+
+	/*clear:both;*/
+}
+
+.contenedorPlano {
+	clear:both;
+}
+.barraLateral1 {
+	clear: both;
+}
+.barraLateral2 {
+	clear: both;
+}
+.barraLateral3 {
+	clear: both;
+}
+.titulo_principal h1 {
+	line-height:2em;
+	margin-top: auto;
+}
+
+.cabecera {
+	width:100%;
+	background-color: #2639E6;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.cabecera a {
+	text-decoration: none;
+}
+
+.barraLateral1 {
+
+	width: 25%;
+	height: 200px;
+	float: left;
+	padding: 1%;
+	padding-left: 1%;
+	background-color: red;
+	color: white;
+	display:inline-block;
+}
+
+.barraLateral2 {
+
+	width: 25%;
+	height: 200px;
+	float: left;
+	padding: 1%;
+	padding-left: 1%;
+	background-color: green;
+	color: white;
+	display:inline-block;
+}
+
+.barraLateral3 {
+
+	width: 25%;
+	height: 200px;
+	float: left;
+	padding: 1%;
+	padding-left: 1%;
+	background-color: yellow;
+	color: white;
+	display:inline-block;
+}
+
+
+.contenedorPlano {
+	float: right;
+	background-color: grey;
+	padding-top: 100%;
+	height: 50%;
+	width:83%;
+	position:absolute;
+	display:inline-block;
+}
+
+#titulo {
+	color: white;
+	width:100%;
+	text-align:center;
+}
+
+#subtitulo {
+	width: 100%;
+	color: white;
+	text-align:left;
+	margin-top: -15px;
+}
+
+
+.cuadroTexto {
+	border-style: solid;
+	border-color: #804BF4;
+	border-radius: 5px;
+	background-color: white;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index:10;
+}
+
+.imagen {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+a {
+	margin-left: 5px;
+	color: blue;
+}
+
+.cuadroTexto {
+	float:left;
+	visibility:hidden;
+	max-width:200px;
+}
+
+.tituloComentario{
+	margin-left: 5%;
+	margin-right: 5%;
+	font-weight: bold;
+}
+
+.textoComentario {
+	max-width:200px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top:25px;
+	position:relative;
+	top:0;
+	left: 0;
+	z-index:10;
+	background-color:white;
+}
+
+.contenedor {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left:0;
+	overflow: hidden;
+}
+
+.imagenfondo {
+	position: relative;
+	top: 0;
+	left: 0%;
+	width: 100%;
+	z-index: -1;
+}
+
+.cabecera img{
+	width: 85px;
+}
+
+.cabecera td {
+	padding-left: 10px;
+}
