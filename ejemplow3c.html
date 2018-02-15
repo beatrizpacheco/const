@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+table, tr, td {border:1px solid black;border-collapse: collapse; border-spacing: 5px; text-align: center;}
+th, td {padding: 15px}
 </style>
 <body class="w3-light-grey">
 
@@ -23,16 +25,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
           <img src="calmarno.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Jane Doe</h2>
+          <div class="w3-display w3-container w3-text-black"> <!-- class="w3-display-bottomleft -->
+            <h2>Gato con Botas</h2>
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Student</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Móstoles, Madrid</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>calmarno@mail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>910000000</p>
-          <hr>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-brown"></i>Student</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-orange"></i>Móstoles, Madrid</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-red"></i>gatete@mail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-black"></i>910000000</p>
+          <hr> <!-- linea de arriba de skills -->
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
           <p>Adobe Photoshop</p>
@@ -49,11 +51,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
           </div>
-          <p>Media</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
-          <br>
+
+          <br> <!-- salto de linea -->
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
           <p>Spanish</p>
@@ -64,7 +63,27 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
           </div>
-          
+
+          <br>
+          <table style="width:100%">
+          <tr>
+              <th>Estudios</th>
+              <th>lugar</th>
+              <th>año</th>
+          </tr>
+          <tr>
+              <td>fp</td>
+              <td>mostoles</td>
+              <td>2015</td>
+          </tr>
+          <tr>
+              <td>isam</td>
+              <td>urjc</td>
+              <td>2019</td>
+          </tr>
+          </table>
+
+
           <br>
         </div>
       </div><br>
