@@ -5,3 +5,20 @@ table{
 	border-collapse: collapse;
 	border: 6px solid black;
 }
+#contenedorPlano {
+	background-color: white;
+	padding-top: 20px;
+	width:83%;
+	position:relative;
+	float: left;
+	background-size: 100%;
+  background-repeat: no-repeat;
+	overflow: hidden;
+}
+.contenedor {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left:0;
+	overflow: hidden;
+}

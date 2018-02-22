@@ -117,7 +117,8 @@ img.table{
 
 table{
 	position: absolute;
-	right: 60px;
+	right: 5%;
+  top: 20%;
 	background-color: black;
 	border-collapse: collapse;
 	border: 6px solid black;
