@@ -1,0 +1,7 @@
+table{
+	position: absolute;
+	right: 60px;
+	background-color: black;
+	border-collapse: collapse;
+	border: 6px solid black;
+}
