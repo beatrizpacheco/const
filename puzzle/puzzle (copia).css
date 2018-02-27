@@ -113,12 +113,14 @@ img#imageType{
 
 img.table{
 	cursor: pointer;
+  width: 200px;
+  height: 140px;
 }
 
 table{
 	position: absolute;
-	right: 5%;
-  top: 20%;
+	right: 60px;
+  top: 25%;
 	background-color: black;
 	border-collapse: collapse;
 	border: 6px solid black;

@@ -1,8 +1,3 @@
-/*
-    JavaScript code of Puzzle Game.
-    Made by Felipe Sandoval for CSAAI.
-*/
-
 var images = [];
 var randoms = [];
 var folder;
@@ -124,7 +119,7 @@ function randomimage(){
 // Obtengo los valores iniciales de mis imagenes
 function getValues(){
 	carousel();
-	folder = document.getElementById("imageType").src.split("/");
+	folder = document.getElementById("imageType").src.split("/"); //imageType es la imagen grande
 	folder = folder[folder.length-1].split(".")[0]
 	winning = [folder + "1", folder + "2", folder + "3", folder + "4", folder + "5",
 						 folder + "6", folder + "7", folder + "8", "black"];
