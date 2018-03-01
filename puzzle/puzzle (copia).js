@@ -34,6 +34,7 @@ function carousel() {
 		if (myIndex1 > x.length) {myIndex1 = 1};
 		x[myIndex1-1].style.display = "inline";
 
+
 		x = document.getElementsByClassName("slide2");
 		for(i=0; i<x.length; i++) {
 				x[i].style.display = "none";
@@ -41,6 +42,7 @@ function carousel() {
 		myIndex2++;
 		if (myIndex2 > x.length) {myIndex2 = 1};
 		x[myIndex2-1].style.display = "inline";
+
 
 		x = document.getElementsByClassName("slide3");
 		for(i=0; i<x.length; i++) {
@@ -101,10 +103,10 @@ function randomimage(){
 	for(i=1; i<10; i++){
 		rand = "pos" + i;
 		num = getRandomInt(1, 9);
-		while (randoms.includes(num)){
+		while (randoms.includes(num)){ //para que no se repita en el puzzle la ficha
 			num = getRandomInt(1, 9);
 		}
-		randoms.push(num);
+		randoms.push(num); //guarda las fichas
 		if (num == 9) {
 			put_black = true;
 		}

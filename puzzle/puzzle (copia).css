@@ -1,8 +1,3 @@
-/*
-    CSS3 Stylesheet for the puzzle Game.
-    Made by Felipe Sandoval for CSAAI.
-*/
-
 @font-face{
     font-family: depalma;
     src: url("depalma.ttf");
@@ -19,7 +14,7 @@
 }
 
 body{
-	background-image: url(background.png);
+	/*background-image: url(./fondo.jpg);*/
 }
 
 p#title{
@@ -34,8 +29,8 @@ p#special{
 	font-size: 20px;
 	color: white;
 	position: absolute;
-	top: 115px;
-	left: 355px;
+	top: 70px;
+	left: 175px;
 	cursor: default;
 }
 
