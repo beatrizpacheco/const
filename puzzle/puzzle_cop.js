@@ -120,7 +120,7 @@ function randomimage(){
 
 // Obtengo los valores iniciales de mis imagenes
 function getValues(){
-	init();
+	carousel();
 	folder = document.getElementById("imageType").src.split("/"); //imageType es la imagen grande
 	folder = folder[folder.length-1].split(".")[0]
 	winning = [folder + "1", folder + "2", folder + "3", folder + "4", folder + "5",
