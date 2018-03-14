@@ -35,10 +35,10 @@ var highscore;
 var player;
 
 //cargar imagen
-function init(){
+function init(src){
   _img = new Image();
   _img.addEventListener('load',onImage,false);
-  _img.src = "./a.jpg";
+  _img.src = src + ".jpg";
   getValues();
 }
 
@@ -95,11 +95,13 @@ function getValues(){
 
 // Para seleccionar la imagen de mi slider.
 function displayID(clicked){
-	var change = clicked.src.split("/");
+
+  var change = clicked.src.split("/");
 	change = change[change.length-1].split(".")[0];
-	clicked.src = document.getElementById("imageType").src;
+  init(change);
+  clicked.src = document.getElementById("imageType").src;
 	document.getElementById("imageType").src = change + ".jpg";
-	images = [];
+  images = [];
 	clearInterval(countingInterval); // para iniciar mi contador de nuevo
 	clearInterval(carouselInterval); // para iniciar mi slider
 	seconds = 0;
@@ -224,6 +226,7 @@ function onPuzzleClick(e){
       _stage.restore();//reestablecer el valor alfa
       document.onmousemove = updatePuzzle;
       document.onmouseup = pieceDropped;
+
   }
 }
 
@@ -292,6 +295,7 @@ function pieceDropped(e){
       _currentDropPiece.xPos = tmp.xPos;
       _currentDropPiece.yPos = tmp.yPos;
   }
+
   resetPuzzleAndCheckWin();
 }
 
@@ -307,21 +311,19 @@ function resetPuzzleAndCheckWin(){
       if(piece.xPos != piece.sx || piece.yPos != piece.sy){
           gameWin = false;
       }
-
   }
-  if(gameWin){
-      setTimeout(gameOver,2000);
 
-      console.log("ganee");
-  		highscore = String(hours) + ":" + String(minutes) + ":" + String(seconds);
-  		//var win = document.createElement("img");
-    	//win.src = "winner.gif";
-  		//win.id = "winner";
-  		//win.width = window.innerWidth;
-  		//win.height = window.innerHeight;
-      hideimage();
-  		//win.setAttribute("onclick", "hideimage()");
-  		//document.getElementById("slider").appendChild(win);
+  if(gameWin){
+      setTimeout(gameOver,500);
+      highscore = String(hours) + ":" + String(minutes) + ":" + String(seconds);
+      var win = document.createElement("img");
+    	win.src = "winner.gif";
+  		win.id = "winner";
+  		win.width = window.innerWidth;
+  		win.height = window.innerHeight;
+      //hideimage();
+  		win.setAttribute("onclick", "hideimage()");
+  		document.getElementById("slider").appendChild(win);
 
 
 
@@ -331,7 +333,7 @@ function resetPuzzleAndCheckWin(){
 
 
   function hideimage(){
-    //document.getElementById("slider").removeChild(document.getElementById("winner"));
+    document.getElementById("slider").removeChild(document.getElementById("winner"));
     // hay que hacerlo condicional por si se supera el highscore
     var nickname = prompt("New Highscore! Write your name", "Your Name");
     if (nickname != "" && nickname != null) {
@@ -356,4 +358,12 @@ function gameOver(){
   document.onmousemove = null;
   document.onmouseup = null;
   initPuzzle();
+}
+
+function showhighscore(){
+	if (player == undefined){
+		alert("No one has played yet!\n Try your best NOW");
+	}else{
+		alert("THE BEST PLAYER IS:\n\n" + player + "\nFinished in: " + highscore);
+	}
 }
