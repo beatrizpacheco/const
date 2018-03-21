@@ -361,7 +361,26 @@ function gameOver(){
 }
 
 function showhighscore(){
-	if (player == undefined){
+  /*
+  function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {  devuelve la pos
+            c = c.substring(1); busca la pos y te crea un substring
+        }
+        if (c.indexOf(name) == 0) { indexof busca en el string lo que le pases y te dice la posicion
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+  */
+
+  if (player == undefined){
 		alert("No one has played yet!\n Try your best NOW");
 	}else{
 		alert("THE BEST PLAYER IS:\n\n" + player + "\nFinished in: " + highscore);
