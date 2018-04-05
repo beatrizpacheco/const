@@ -97,4 +97,3 @@ function checkSolved() {
   }
   solved = flag;
 }
-pruev
