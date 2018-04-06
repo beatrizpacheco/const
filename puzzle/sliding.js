@@ -5,7 +5,7 @@ var myIndex1 = 0;
 var myIndex2 = 0;
 var myIndex3 = 0;
 var highscore;
-var player;
+//var player = "";
 var img;
 
 var totaltime = 0;
@@ -202,6 +202,7 @@ function distance(x1, y1, x2, y2) {
 }
 
 function hideimage(){
+  var player = "";
   document.getElementById("slider").removeChild(document.getElementById("winner"));
   var nickname = prompt("New Highscore! Write your name", "Your Name");
   console.log(nickname);
@@ -210,7 +211,7 @@ function hideimage(){
   } else {
     player = "no name (write yours the next time)";
   };
-  equatecookie();
+  equatecookie(player);
   console.log("he entrado");
   clearInterval(countingInterval); // para iniciar mi contador de nuevo
   seconds = 0;
@@ -219,7 +220,7 @@ function hideimage(){
   getValues();
 }
 
-function equatecookie(){
+function equatecookie(player){
   console.log("entro");
   console.log(document.cookie);
   cookie = document.cookie;
@@ -230,7 +231,7 @@ function equatecookie(){
     second = 0;
   }
   if (second > totaltime || cookie=== ""){
-    if (name === player){ //BORRAR VARIABLE GLOBAL
+    if (name == player){ //BORRAR VARIABLE GLOBAL
       alert("PUTA! QUÉ OFERTÓN!!");
     }
     cadena = "username= " + player + " " + highscore + " " + String(totaltime);
