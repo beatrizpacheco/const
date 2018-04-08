@@ -1,18 +1,3 @@
-/*@font-face{
-    font-family: depalma;
-    src: url("depalma.ttf");
-}
-
-@font-face{
-    font-family: puzzle;
-    src: url("puzzle.ttf");
-}
-
-@font-face{
-    font-family: clock;
-    src: url("alarm_clock.ttf");
-}
-*/
 body{
 	background-image:url(./fondo.jpg);
 }
@@ -31,14 +16,14 @@ canvas{
 p#title{
 	font-family: puzzle;
 	font-size: 60px;
-	color: white;
+	color: black;
 	cursor: default;
 }
 
 p#special{
 	font-family: depalma;
 	font-size: 20px;
-	color: white;
+	color: black;
 	position: absolute;
 	top: 120px;
 	left: 175px;

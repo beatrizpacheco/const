@@ -225,16 +225,16 @@ function equatecookie(player){
   console.log(document.cookie);
   cookie = document.cookie;
   if (cookie){
-    name = cookie.split("=")[1].split(" ")[0];
-    second = parseInt(cookie.split("=")[1].split(" ")[2]);
+    name = cookie.split("=")[1].split("%")[0];
+    second = parseInt(cookie.split("=")[1].split("%")[2]);
   }else{
     second = 0;
   }
   if (second > totaltime || cookie=== ""){
-    if (name == player){ //BORRAR VARIABLE GLOBAL
+    if (name == player && cookie != ""){ //BORRAR VARIABLE GLOBAL
       alert("PUTA! QUÉ OFERTÓN!!");
     }
-    cadena = "username= " + player + " " + highscore + " " + String(totaltime);
+    cadena = "username= " + player + "%" + highscore + "%" + String(totaltime);
     document.cookie = cadena;
     console.log(document.cookie);
   }
@@ -248,16 +248,11 @@ function gameWin(){
 function showhighscore(){
   cookie = document.cookie;
   if (cookie){
-    name = cookie.split("=")[1].split(" ")[0];
-    second = cookie.split("=")[1].split(" ")[1];
+    name = cookie.split("=")[1].split("%")[0];
+    second = cookie.split("=")[1].split("%")[1];
     alert("THE BEST PLAYER IS:\n\n" + name + "\nFinished in: " + second);
   } else{
     alert("No one has played yet!\n Try your best NOW");
   }
 
-  // if (name === undefined){
-  //
-  // }else{
-  //
-  // }
 }
